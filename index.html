@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saarthak Khandelwal // personal terminal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="palette.js"></script>
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Saarthak Khandelwal" />
+<meta property="og:description" content="AI Developer • Research Engineer • Incoming MSCS @ University of Sydney" />
+<meta property="og:image" content="https://saarthak-khandelwal.github.io/personal-site/assets/og-image.png" />
+<meta property="og:url" content="https://saarthak-khandelwal.github.io/personal-site/" />
+<meta property="og:type" content="website" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Saarthak Khandelwal" />
+<meta name="twitter:description" content="AI Developer • Research Engineer • Incoming MSCS @ University of Sydney" />
+<meta name="twitter:image" content="https://saarthak-khandelwal.github.io/personal-site/assets/og-image.png" />
+</head>
+<body>
+
+  <div class="ascii-rail left" id="railLeft">
+    <canvas id="asciiLeft"></canvas>
+  </div>
+  <div class="ascii-rail right" id="railRight">
+    <canvas id="asciiRight"></canvas>
+  </div>
+  <div class="scan-overlay"></div>
+  <div class="vignette"></div>
+  <div class="ascii-takeover" id="asciiTakeover" aria-hidden="true">
+    <canvas id="asciiTakeoverCanvas"></canvas>
+  </div>
+
+  <div class="page">
+
+    <div class="panel banner" id="bannerPanel">
+      <div class="banner-inner">
+        <canvas id="nameCanvas" aria-label="Saarthak Khandelwal"></canvas>
+        <div class="banner-meta">
+          <p class="id-handle">@Saarthak-Khandelwal · Bangalore, Karnataka, India</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel section">
+      <p class="label">about</p>
+      <p class="bio">
+        Computer Science Engineer focused on applied AI systems.
+        <span class="muted">Currently building RAG pipelines, hybrid search (FAISS + BM25), adaptive assessment engines, and social listening tools at Calibr.AI. My work spans NLP, information retrieval, and quantum-classical machine learning research.</span>
+        Starting Master of Computer Science at the University of Sydney in July 2026.
+      </p>
+    </div>
+
+    <div class="panel section">
+      <p class="label">links</p>
+      <div class="links">
+        <a class="link-pill" href="https://github.com/Saarthak-Khandelwal" target="_blank" rel="noopener"><span class="glyph">⌥</span>GitHub</a>
+        <a class="link-pill" href="https://www.linkedin.com/in/saarthak-khandelwal-02b0b42b1/" target="_blank" rel="noopener"><span class="glyph">in</span>LinkedIn</a>
+        <a class="link-pill" href="mailto:saarthakkhandelwal@gmail.com" target="_blank" rel="noopener"><span class="glyph">✉</span>Email</a>
+        <a class="link-pill" href="./assets/resume.pdf" target="_blank" rel="noopener"><span class="glyph">◧</span>Resume</a>
+      </div>
+    </div>
+
+    <div class="panel section">
+      <p class="label">now</p>
+      <div class="now-card">
+        <div class="now-thumb">▣</div>
+        <div class="now-text">
+          <p class="now-title">AI Developer Intern — Calibr.AI (Brainhive Labs)</p>
+          <p class="now-sub">RAG · hybrid search · adaptive assessment · social listening · Ongoing</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel section">
+      <p class="label">stats</p>
+      <div class="stats-grid">
+        <div class="stat"><span class="num">3</span><span class="cap">AI/ML research projects</span></div>
+        <div class="stat"><span class="num">6</span><span class="cap">internships &amp; research roles</span></div>
+        <div class="stat"><span class="num">2026</span><span class="cap">MSCS @ USyd</span></div>
+      </div>
+    </div>
+
+    <div class="panel section">
+      <p class="label">skills</p>
+      <div class="skills-groups">
+        <div class="skill-group">
+          <p class="skill-group-label">languages</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML / CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">AI / ML</p>
+          <div class="skill-tags">
+            <span class="skill-tag">RAG Pipelines</span>
+            <span class="skill-tag">LLM Fine-tuning</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">AutoGluon</span>
+            <span class="skill-tag">Transformers</span>
+            <span class="skill-tag">Quantum ML</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">tools &amp; infra</p>
+          <div class="skill-tags">
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">Vector DBs</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Node.js</span>
+          </div>
+        </div>
+      </div>
+      <p class="konami-hint">↑ ↑ ↓ ↓ ← → ← → B A</p>
+    </div>
+
+    <div class="panel section">
+      <p class="label">projects</p>
+      <a class="project-item" href="https://github.com/Saarthak-Khandelwal/PDF-Reader-with-LLM" target="_blank" rel="noopener">
+        <span class="activity-idx">01</span>
+        <div class="activity-body">
+          <p class="a-title">PDF-Reader-with-LLM</p>
+          <p class="a-meta">Local PDF query engine — chunks documents and runs RAG via Ollama, fully offline.</p>
+          <div class="project-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Ollama</span>
+            <span class="skill-tag">LangChain</span>
+          </div>
+        </div>
+        <span class="project-arrow">↗</span>
+      </a>
+      <a class="project-item" href="https://github.com/Saarthak-Khandelwal/QMSAN-Project" target="_blank" rel="noopener">
+        <span class="activity-idx">02</span>
+        <div class="activity-body">
+          <p class="a-title">QMSAN-Project</p>
+          <p class="a-meta">Quantum Mixed State Attention Networks — hybrid quantum-classical architecture for multilingual text classification.</p>
+          <div class="project-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Quantum ML</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">NLP</span>
+          </div>
+        </div>
+        <span class="project-arrow">↗</span>
+      </a>
+      <a class="project-item" href="https://github.com/Saarthak-Khandelwal/Self-Driving-Car" target="_blank" rel="noopener">
+        <span class="activity-idx">03</span>
+        <div class="activity-body">
+          <p class="a-title">Self-Driving-Car</p>
+          <p class="a-meta">Browser-based simulator where cars evolve via neural networks &amp; a genetic algorithm — runs entirely in-browser, no backend.</p>
+          <div class="project-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Neural Networks</span>
+            <span class="skill-tag">Genetic Algorithm</span>
+            <span class="skill-tag">Canvas API</span>
+          </div>
+        </div>
+        <span class="project-arrow">↗</span>
+      </a>
+    </div>
+
+    <div class="panel section">
+      <p class="label">recent activity</p>
+      <div class="activity-item activity-expandable" id="calibrItem">
+        <span class="activity-idx">01</span>
+        <div class="activity-body">
+          <p class="a-title">
+            AI Developer Intern — Calibr.AI (Brainhive Labs)
+            <button class="expand-toggle" id="calibrToggle" aria-expanded="false" aria-controls="calibrDetail" type="button">+</button>
+          </p>
+          <p class="a-meta">2025 · Ongoing — RAG, hybrid search, adaptive assessment, social listening</p>
+          <div class="activity-detail" id="calibrDetail" aria-hidden="true">
+            <ul class="detail-list">
+              <li>Built BGE + BM25 hybrid skill tagger over 14k ESCO/O*NET skills with CoT LLM reranker and orphan-tag detection — achieved <strong>86.6% tag accuracy</strong> across 523 production courses, clearing the 85% project target</li>
+              <li>Designed an 8-stage post-retrieval pipeline (normalise → deduplicate → group → order → merge → rank → limit → format) delivering a <strong>+15% retrieval relevance</strong> gain over the raw Qdrant baseline</li>
+              <li>Replaced sequential ingestion with <code>asyncio.gather</code> + bulk Qdrant upserts — <strong>5–10× throughput</strong> on large batches; INT8 scalar quantisation cut vector storage by <strong>~75%</strong></li>
+              <li>Architected a 6-agent intent-aware RAG pipeline (query refinement → intent router → semantic/operational/hybrid agents → LLM response) with persistent multi-turn session history</li>
+              <li>Built Watchdog — a multi-platform social listening tool (Reddit, Quora, LinkedIn) with Azure OpenAI reply generation and Slack notification modals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="activity-item activity-expandable" id="qmsanItem">
+        <span class="activity-idx">02</span>
+        <div class="activity-body">
+          <p class="a-title">
+            Research Intern — VIT Vellore
+            <button class="expand-toggle" id="qmsanToggle" aria-expanded="false" aria-controls="qmsanDetail" type="button">+</button>
+          </p>
+          <p class="a-meta">2025 — Quantum Mixed-State Attention Network (QMSAN) for multilingual text classification</p>
+          <div class="activity-detail" id="qmsanDetail" aria-hidden="true">
+            <ul class="detail-list">
+              <li>Designed QMSAN — a hybrid quantum-classical architecture integrating XLM-RoBERTa with parameterized quantum circuits (VQC, QRC) for attention computation via qubit-space expectation values</li>
+              <li>Implemented 4 model variants (Control, VQC, QRC, Hybrid) evaluated on XGLUE NC across English, German, Spanish, French, and Russian — Hybrid achieved <strong>87% EN accuracy</strong> and ~80% on DE/ES, with avg <strong>78% across all 5 languages</strong></li>
+              <li>QRC variant was fastest to train (~51s/batch) while the Hybrid led on macro F1 (0.65) — demonstrating distinct accuracy-vs-efficiency trade-offs across quantum approaches</li>
+              <li>Used PennyLane and Qiskit for quantum simulation on standard GPU hardware (RTX 3050), showing hybrid QML is viable without real quantum devices</li>
+              <li><a class="zenodo-link" href="https://doi.org/10.5281/zenodo.21106178" target="_blank" rel="noopener">Read on Zenodo <span class="zenodo-arrow">↗</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="activity-item activity-expandable" id="vesuviusItem">
+        <span class="activity-idx">03</span>
+        <div class="activity-body">
+          <p class="a-title">
+            Research Intern — Vesuvius R&amp;D (VRIPL), Vizag
+            <button class="expand-toggle" id="vesuviusToggle" aria-expanded="false" aria-controls="vesuviusDetail" type="button">+</button>
+          </p>
+          <p class="a-meta">2025 — AutoGluon-based ML workflow for refractory material property prediction</p>
+          <div class="activity-detail" id="vesuviusDetail" aria-hidden="true">
+            <ul class="detail-list">
+              <li>Built an end-to-end AutoGluon regression pipeline to predict <strong>6 refractory material properties</strong> (bulk density, apparent porosity, linear change, RUL, CCS, HMOR) from chemical composition and particle size inputs</li>
+              <li>Trained separate <code>TabularPredictor</code> per target using <code>good_quality</code> preset — AutoGluon auto-selected from LightGBM, CatBoost, XGBoost, Random Forest, and neural nets with a 300s time budget per model</li>
+              <li>Implemented partial-input prediction with automatic median/mode imputation, batch CSV export, and save/load functionality — enabling non-ML users to run predictions from incomplete formulation data</li>
+              <li>Evaluated with RMSE, MAE, and R² per target; delivered as a turnkey Colab notebook usable with minimal ML knowledge by the lab team at VRIPL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="activity-item activity-expandable" id="carItem">
+        <span class="activity-idx">04</span>
+        <div class="activity-body">
+          <p class="a-title">
+            Autonomous Driving Simulator — Personal Project
+            <button class="expand-toggle" id="carToggle" aria-expanded="false" aria-controls="carDetail" type="button">+</button>
+          </p>
+          <p class="a-meta">2025 — Browser-based simulator using neural networks &amp; genetic algorithms</p>
+          <div class="activity-detail" id="carDetail" aria-hidden="true">
+            <ul class="detail-list">
+              <li>Built a fully browser-based self-driving car simulator in <strong>vanilla JavaScript — zero libraries</strong>; runs entirely via Canvas API with no backend</li>
+              <li>Implemented a feedforward neural network from scratch (<code>network.js</code>) with configurable layer sizes, bias/weight mutation, and real-time weight visualisation via <code>visualizer.js</code></li>
+              <li>Cars navigate using ray-cast sensors (<code>sensor.js</code>) that detect road boundaries and traffic — sensor readings feed directly into the network as inputs</li>
+              <li>Genetic algorithm drives evolution across a population of cars each generation: best-performing brain is saved to <code>localStorage</code> and mutated for the next run, progressively improving lane-keeping behaviour</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="activity-item">
+        <span class="activity-idx">05</span>
+        <div class="activity-body">
+          <p class="a-title">Volunteer Website Developer — Calibr.AI (Brainhive Labs)</p>
+          <p class="a-meta">2025 — Upgraded LMS platform, optimized REST APIs &amp; database efficiency</p>
+        </div>
+      </div>
+      <div class="activity-item">
+        <span class="activity-idx">06</span>
+        <div class="activity-body">
+          <p class="a-title">Software Intern — Infinite Computer Solutions (Turbify)</p>
+          <p class="a-meta">2024 — Payment systems, Apple Pay integration, encryption protocols</p>
+        </div>
+      </div>
+      <div class="activity-item">
+        <span class="activity-idx">07</span>
+        <div class="activity-body">
+          <p class="a-title">Research Intern — Yale University, CT, USA</p>
+          <p class="a-meta">2023&#8211;2024 — Analysed the US&#8211;China Trade War with R &amp; Python regression analysis</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="rule">// EOF</div>
+      <div>© 2026 Saarthak Khandelwal — built with HTML, CSS &amp; a little ASCII</div>
+      <div class="theme-picker">
+        <button class="theme-btn" id="themeBtn" type="button">⚙ theme</button>
+      </div>
+    </footer>
+
+    <div class="theme-modal-overlay" id="themeModalOverlay">
+      <div class="theme-modal" role="dialog" aria-modal="true" aria-label="Theme editor">
+        <div class="theme-modal-head">
+          <p class="theme-modal-title">colour theme</p>
+          <button class="theme-modal-close" id="themeModalClose" aria-label="Close">×</button>
+        </div>
+        <div class="theme-modal-body">
+          <div class="mode-row">
+            <p class="theme-modal-sub">mode</p>
+            <button class="mode-switch" id="modeSwitch" type="button" aria-label="Toggle dark / light mode" aria-pressed="false">
+              <span class="mode-switch-knob" id="modeSwitchKnob">
+                <svg id="modeIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <p class="theme-modal-sub">number of colours</p>
+          <div class="count-toggle" id="countToggle">
+            <button type="button" data-count="2">2</button>
+            <button type="button" data-count="3">3</button>
+            <button type="button" data-count="4">4</button>
+          </div>
+          <div class="theme-modal-sub-row">
+            <p class="theme-modal-sub">colours</p>
+            <button class="theme-random-btn" id="themeRandom" type="button">🎲 random</button>
+          </div>
+          <div class="color-rows" id="colorRows"></div>
+          <div class="theme-modal-actions">
+            <button class="theme-modal-btn ghost" id="themeReset" type="button">reset</button>
+            <button class="theme-modal-btn" id="themeApply" type="button">apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+<script src="main.js" defer></script>
+
+</body>
+</html>
